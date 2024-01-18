@@ -20,21 +20,22 @@
             background-color: black;
         }
 
-        #slider {
+        #slider1, #slider2 {
             width: 100%;
         }
     </style>
 </head>
 <body>
-    <h1>Demo page under construction</h1>
     <div id="scale-bar"></div>
-    <input type="range" min="0" max="10" value="0" id="slider">
+    <input type="range" min="0" max="100" value="0" id="slider1">
+    <input type="range" min="0" max="100" value="0" id="slider2">
     <p id="slider-value">0</p>
+    <img id="image" src="img/(1).png">
 
     <script>
         var min = 0;
-        var max = 10;
-        var step = 1;
+        var max = 100;
+        var step = 10;
         var scaleBar = document.getElementById('scale-bar');
 
         for (var i = min; i <= max; i += step) {
@@ -52,11 +53,18 @@
             scaleBar.appendChild(marker);
         }
 
-        var slider = document.getElementById('slider');
+        var slider1 = document.getElementById('slider1');
+        var slider2 = document.getElementById('slider2');
         var sliderValue = document.getElementById('slider-value');
-        slider.oninput = function() {
-            sliderValue.textContent = 'Slider value: ' + this.value;
+
+        function updateSliderValue() {
+            var sum = Number(slider1.value) + Number(slider2.value);
+            sliderValue.textContent = 'Slider values sum: ' + sum;
+            image.src = 'img/' + '(' + sum + ').png';
         }
+
+        slider1.oninput = updateSliderValue;
+        slider2.oninput = updateSliderValue;
     </script>
 </body>
 </html>
