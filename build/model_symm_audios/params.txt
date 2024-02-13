@@ -1,0 +1,9 @@
+name: scale_singleInst_1dim_1_checkpoint_10000
+wav_name: Accordion-69.97.wav
+n_trans: 4
+trans_interval: 0.5
+seq_len: 15
+base_len: 3
+rnn_num_layers: 1
+rnn_hidden_size: 256
+gru: False
