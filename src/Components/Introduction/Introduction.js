@@ -1,4 +1,5 @@
 import './Introduction.css';
+import {getEnvPath} from '../../commonUtils';
 
 function Introduction() {
     return (
@@ -6,22 +7,22 @@ function Introduction() {
             <div className='logos'>
                 <div className='logo_container'>
                     <a href="https://mbzuai.ac.ae/" id="logo_mbz_link">
-                        <img className="logo" id='logo_mbz' src='/logos/logo_MBZUAI.png' alt='' />
+                        <img className="logo" id='logo_mbz' src={getEnvPath('/logos/logo_MBZUAI.png')} alt='' />
                     </a>
                 </div>
                 <div className='logo_container'>
                     <a href="https://www.nyu.edu/" id="logo_nyu_link">
-                        <img className="logo" id='logo_nyu' src='/logos/logo_NYU.png' alt='' />
+                        <img className="logo" id='logo_nyu' src={getEnvPath('/logos/logo_NYU.png')} alt='' />
                     </a>
                 </div>
                 <div className='logo_container' id="logo_container_musicxlab">
                     <a href="http://www.musicxlab.com/#/index" id="logo_musicxlab_link">
-                        <img className="logo" id='logo_musicxlab' src='/logos/logo_musicXLab.jpeg' alt='' />
+                        <img className="logo" id='logo_musicxlab' src={getEnvPath('/logos/logo_musicXLab.jpeg')} alt='' />
                     </a>
                 </div>
                 <div className='logo_container' id="logo_container_neurips">
                     <a href="https://openreview.net/forum?id=3iSj4l8ZGT&noteId=3iSj4l8ZGT" id="logo_neurips_link">
-                        <img className="logo" id='logo_neurips' src='/logos/logo_NeurIPS.png' alt='' />
+                        <img className="logo" id='logo_neurips' src={getEnvPath('/logos/logo_NeurIPS.png')} alt='' />
                     </a>
                 </div>
             </div>

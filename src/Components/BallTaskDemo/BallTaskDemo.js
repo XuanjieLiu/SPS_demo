@@ -1,6 +1,7 @@
 import React from 'react';
 import ImageSlider from '../ImageSlider/ImageSlider';
 import './BallTaskDemo.css';
+import {getEnvPath} from '../../commonUtils';
 
 const BallTaskDemo = () => {
     return (
@@ -18,14 +19,14 @@ const BallTaskDemo = () => {
                     </p>
                 </div>
                 <div className="ballTaskDemo-right-part">
-                    <img src="/dataset_preview.gif" alt="" />
+                    <img src={getEnvPath("/dataset_preview.gif")} alt="" />
                     <div className='ballTaskDemo-right-part-label'>
                         <span>Fig 1: Raw data</span>
                     </div>
                 </div>
             </div>
             <ImageSlider 
-                imgRoot="/model_symm_imgs" 
+                imgRoot="/model_symm_imgs"
                 initValue={[4,4,4]}
                 zParams={[[-1.4, 2.4, 10], [0., 1.3, 10], [-1.3, 3., 10]]}
                 title={'Demo 1: SPS learns the Cartesian coordinate system'}

@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Slider from '../Slider/Slider';
 import './ImageSlider.css'
+import {getEnvPath} from '../../commonUtils';
 
 function ImageSlider({imgRoot, initValue, title, zParams, children}) {
   const [values, setValues] = useState(initValue);
@@ -12,7 +13,7 @@ function ImageSlider({imgRoot, initValue, title, zParams, children}) {
     setValues(newValues);
   };
 
-  const imagePath = `${imgRoot}/${values.join('_')}_.png`;
+  const imagePath = getEnvPath(`${imgRoot}/${values.join('_')}_.png`);
 
   const value2z = () => {
     let z = [0, 0, 0]

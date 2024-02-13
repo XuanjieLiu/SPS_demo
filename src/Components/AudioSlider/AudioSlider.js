@@ -1,7 +1,7 @@
 import './AudioSlider.css'
 import React, { useState } from 'react';
 import Slider from '../Slider/Slider';
-
+import {getEnvPath} from '../../commonUtils';
 
 function SpecViewer({title, specPath, audioPath}) {
     return (
@@ -9,9 +9,9 @@ function SpecViewer({title, specPath, audioPath}) {
             <div className='title'>
                 <span>{title}</span>
             </div>
-            <img className='specImg' src={specPath} alt=''/>
+            <img className='specImg' src={getEnvPath(specPath)} alt=''/>
             <audio controls key={audioPath} className='audio_control'>
-                <source src={audioPath} type="audio/wav" />
+                <source src={getEnvPath(audioPath)} type="audio/wav" />
                 Your browser does not support the audio element.
             </audio>
         </div>
