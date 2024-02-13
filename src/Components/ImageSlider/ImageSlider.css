@@ -1,0 +1,111 @@
+.img-sliders-container {
+    display: block;
+    margin: 30px 0 0 0;
+    /* background: ghostwhite; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 30px 50px 30px 50px;
+}
+  
+.img-sliders-container .sliders-group {
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+  
+.img-sliders-container .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-sliders-container .slider-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex:60;
+}
+
+.img-sliders-container .slider {
+    width: -webkit-fill-available;
+    margin: 5px 40px 5px 30px;
+}
+
+.img-sliders-container .slider-bar {
+    width: 100%;
+    height: 5px;
+    background: #ddd;
+    outline: none;
+    -webkit-appearance: none;
+}
+  
+.img-sliders-container .slider-bar::-webkit-slider-thumb {
+    /* -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: #4CAF50; */
+    cursor: pointer;
+}
+  
+.img-sliders-container .slider-bar::-moz-range-thumb {
+    /* width: 20px;
+    height: 20px;
+    background: #4CAF50; */
+    cursor: pointer;
+}
+
+.img-sliders-container .slider-image-label span {
+    font-size: 18px;
+    margin: 0 0 20px 0;
+    padding: 0;
+
+}
+  
+.img-sliders-container .slider-labels {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.img-sliders-container .slider-name {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.img-sliders-container .slider-name-font {
+    font-size: 25px;
+    /* margin: 0 0 20px 0; */
+    padding: 0;
+}
+
+.img-sliders-container .slider-and-image {
+    display: flex;
+    width: 100%;
+}
+
+.img-sliders-container .img-sliders-title {
+    margin-bottom: 30px;
+}
+
+
+.img-sliders-container .img-sliders-title span {
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    color: black;
+    border-bottom: 2px solid darkgray;
+    padding: 10px;
+}
+
+/* .ImageSlider-below-caption .caption-bold{
+    font-weight: bold;
+} */
+
+.img-sliders-container .below-caption {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: justify;
+}

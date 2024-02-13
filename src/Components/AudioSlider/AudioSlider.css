@@ -1,0 +1,107 @@
+.audio-sliders-container {
+    display: block;
+    margin: 30px 0 0 0;
+    /* background: ghostwhite; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 30px 50px 30px 50px;
+}
+
+.audio-sliders-container .audio-slider-imgs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px 0 20px 0;
+}
+
+.audio-sliders-container .audio-sliders-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.audio-sliders-container .audio-sliders-title span{
+    font-family: Arial, sans-serif;
+    font-size: 25px;
+    color: black;
+    border-bottom: 2px solid darkgray;
+    padding: 10px;
+}
+
+.audio-sliders-container .slider {
+    width: 100%;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.specView-container {
+    display: flex;
+    flex-direction: column;
+    width: 370px;
+    margin: 20px 10px 20px 10px;
+}
+
+.specView-container .audio_control{
+    width: 345px;
+}
+
+.specView-container .title {
+    width: 370px;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: black;
+    text-align: center;
+    display: block;
+    margin-left: -20px;
+}
+
+.specView-container .specImg {
+    width: 370px;
+    height: 300px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.audio-sliders-container .arrow_container {
+    margin-left: -20px;
+}
+
+.audio-sliders-container .arrow {
+    display: flex;
+    align-items: center;
+}
+
+.audio-sliders-container .arrow .line {
+    flex-grow: 1;
+    height: 2px;
+    background: black;
+    width: 100px;
+}
+
+.audio-sliders-container .arrow .head {
+    width: 0;
+    height: 0;
+    border-left: 10px solid black;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+
+.audio-sliders-container .translation_text {
+    font-size: 20px;
+    color: black;
+    text-align: center;
+}
+
+.audio-sliders-container .translation_value {
+    font-size: 30px;
+    color: black;
+    text-align: center;
+}
+
+.audio-sliders-container .below-caption {
+    margin-top: 20px;
+    font-size: 18px;
+    text-align: justify;
+}

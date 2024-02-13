@@ -1,0 +1,61 @@
+.ballTaskDemo-container {
+    margin: 30px 0 0 0;
+    padding: 30px 50px 80px 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.ballTaskDemo-title {
+    /* styles for the title */
+}
+
+.ballTaskDemo-description {
+    /* styles for the description div */
+    display: flex;
+    flex: column;
+}
+
+.ballTaskDemo-left-part {
+    /* styles for the left part of the description */
+    flex: 60;
+}
+
+.ballTaskDemo-text {
+    /* styles for the text inside the left part */
+    line-height: 1.5;
+    text-align: justify;
+    padding: 0 50px 0 0px;
+    font-size: 18.5px;
+}
+
+.ballTaskDemo-text br {
+    content: "";
+    display: block;
+    margin-bottom: 10px;
+}
+
+.ballTaskDemo-right-part {
+    /* styles for the right part of the description */
+    flex: 19;
+}
+
+.ballTaskDemo-right-part img {
+    /* styles for the image inside the right part */
+    width: 200px;
+    height: 200px;
+}
+
+.ballTaskDemo-right-part-label {
+    /* display: flex; */
+    width: 200px;
+    text-align: center;
+    
+}
+
+.ballTaskDemo-right-part-label span {
+    /* styles for the label inside the right part */
+    font-size: 20px;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+/* Additional styles for ImageSlider components can be added here */
+

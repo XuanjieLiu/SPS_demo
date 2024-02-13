@@ -1,0 +1,145 @@
+.introduction {
+    border-top: 5px solid #424242;
+    padding-top: 15px;
+}
+.introduction .logos {
+    display: flex;
+    flex-direction: row;
+    /* background: ghostwhite; */
+    padding: 0px 0px 10px 0px;
+    border-bottom: 1px solid darkgray;
+    
+}
+
+.introduction .logos #logo_container_musicxlab {
+    width: 20%;
+}
+
+.introduction .logos .logo_container {
+    width: 30%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.introduction .logos  #logo_container_neurips {
+    width: 20%;
+}
+
+.introduction .logos a {
+    display: flex;
+    transition: transform 0.3s ease;
+    flex-direction: column;
+    align-items: center;
+}
+
+.introduction .logos a:hover {
+    transform: scale(1.05);
+}
+
+.introduction .logos img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.introduction .logos #logo_mbz_link {
+    object-position: left;
+}
+
+.introduction .logos #logo_mbz {
+    height: 95%;
+    width: 95%;
+}
+
+.introduction #logo_nyu {
+    /* object-fit: cover; */
+    margin-left: 30px;
+}
+
+.introduction .logos #logo_nyu_link {
+    object-position: center;
+}
+
+.introduction #logo_neurips {
+    height: 95%;
+    width: 95%;
+    object-position: right;
+}
+
+.introduction #logo_musicxlab {
+    height: 60%;
+    width: 60%;
+}
+
+.introduction .title {
+    font-size: 33px;
+    font-weight: 400;
+    line-height: 60.75px;
+    margin-bottom: 0;
+    text-align: justify;
+    padding-top: 10px;
+}
+
+.introduction .authors {
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.introduction .authors a {
+    color: black; /* 超链接的默认颜色 */
+    text-decoration: none; /* 去掉下划线 */
+    transition: color 0.3s ease; /* 过渡效果 */
+}
+
+.introduction .authors a:hover {
+    color: gray; /* 鼠标悬停时的颜色 */
+    text-decoration: underline; /* 鼠标悬停时增加下划线 */
+}
+
+.introduction .authors a:active {
+    color: #495057; /* 鼠标点击时的颜色 */
+}
+
+.introduction .title a {
+    color: black; /* 超链接的默认颜色 */
+    text-decoration: none; /* 去掉下划线 */
+    transition: color 0.3s ease; /* 过渡效果 */
+}
+
+.introduction .title a:hover {
+    color: gray; /* 鼠标悬停时的颜色 */
+    text-decoration: underline; /* 鼠标悬停时增加下划线 */
+}
+
+.introduction .title a:active {
+    color: #495057; /* 鼠标点击时的颜色 */
+}
+
+.introduction .links {
+    font-size: 20px;
+    display: flex;
+}
+
+.introduction .intro {
+    line-height: 1.5;
+    text-align: justify;
+    padding: 30px 0px 20px 0px;
+    font-size: 18.5px;
+}
+
+.introduction .intro a {
+    color: #007BFF; /* 超链接的默认颜色 */
+    text-decoration: none; /* 去掉下划线 */
+    transition: color 0.3s ease; /* 过渡效果 */
+}
+
+.introduction .intro a:hover {
+    color: #0056b3; /* 鼠标悬停时的颜色 */
+}
+
+.introduction .intro a:active {
+    color: #495057; /* 鼠标点击时的颜色 */
+}
