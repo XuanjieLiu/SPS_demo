@@ -46,10 +46,10 @@ function Introduction() {
                 <a href="https://arxiv.org/abs/2302.10890"><i>Learning Interpretable Low-dimensional Representation via Physical Symmetry</i></a>.
                 We introduce a novel self-supervised learning framework, SPS (Self-supervised Learning via Physical Symmetry), 
                 which uses physical symmetries as an inductive bias to extract interpretable low-dimensional representations from perceptual time-series data, 
-                such as videos and audio. SPS is compared to two models: an ablation version without physical symmetry, 
+                such as videos and audios. To demonstrate the experimental results, we compare the SPS with two other models: an ablation version without physical symmetry, 
                 essentially a Variational Autoencoder (VAE) with a prior model, and a baseline model, Beta-VAE. 
-                The demos illustrate the alignment of their learned representations with human concepts of the physical world. 
-                The SPS code is available on&nbsp;
+                These domes intuitively demonstrate the representation space learned by the models.
+                The source code for SPS is now publicly available on&nbsp;
                 <a href='https://github.com/XuanjieLiu/Self-supervised-learning-via-Physical-Symmetry'>Github</a>.
             </div>
         </div>
