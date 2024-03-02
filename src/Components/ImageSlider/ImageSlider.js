@@ -1,11 +1,14 @@
 // ImageSlider.js
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Slider from '../Slider/Slider';
+import JSZip from 'jszip';
 import './ImageSlider.css'
 import {getEnvPath} from '../../commonUtils';
 
-function ImageSlider({imgRoot, initValue, title, zParams, children}) {
+function ImageSlider({imgRoot, initValue, title, zParams, children, maxImg=10}) {
   const [values, setValues] = useState(initValue);
+  const [loading, setLoading] = useState(true);
+  const [images, setImages] = useState({});
 
   const handleChange = (index) => (v) => {
     const newValues = [...values];
@@ -13,7 +16,36 @@ function ImageSlider({imgRoot, initValue, title, zParams, children}) {
     setValues(newValues);
   };
 
-  const imagePath = getEnvPath(`${imgRoot}/${values.join('_')}_.png`);
+  
+  useEffect(() => {
+    fetch(getEnvPath(`${imgRoot}.zip`))
+      .then(response => response.blob())
+      .then(JSZip.loadAsync)
+      .then(zip => {
+        const promises = [];
+        zip.forEach((relativePath, zipEntry) => {
+          if (zipEntry.name.endsWith('.png')) {
+            promises.push(zipEntry.async('blob').then(blob => {
+              const url = URL.createObjectURL(blob);
+              return [zipEntry.name, url];
+            }));
+          }
+        });
+        return Promise.all(promises);
+      })
+      .then(entries => {
+        const images = Object.fromEntries(entries);
+        setImages(images);
+        setLoading(false);
+      });
+  }, []);
+
+
+
+  const value2img = (x, y, z) => {
+    return images[`${imgRoot.split('/')[1]}/${x}_${y}_${z}_.png`];
+  }
+
 
   const value2z = () => {
     let z = [0, 0, 0]
@@ -44,7 +76,9 @@ function ImageSlider({imgRoot, initValue, title, zParams, children}) {
                 ))}
             </div>
             <div className='image-container'>
-                <img className="ballImage" src={imagePath} alt={imagePath} />
+                {loading ? 
+                  <div className='imgLoading'><div className="loader"></div>Loading...</div> : 
+                  <img className="ballImage" src={value2img(...values)} alt='...' />}
                 <div className='slider-image-label'>
                     <span>z = [{value2z()}]<sup>T</sup></span>
                 </div>

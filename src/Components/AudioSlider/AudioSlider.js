@@ -31,7 +31,7 @@ function AudioSlider({initValue=0, title, intervel, nTrans, children, audioDir})
                 <span>{title}</span>
             </div>
             <div className='audio-slider-imgs'>
-                <SpecViewer 
+                {/* <SpecViewer 
                     title='Original audio'
                     specPath={`${audioDir}/origin.png`}
                     audioPath={`${audioDir}/origin.wav`}
@@ -47,9 +47,9 @@ function AudioSlider({initValue=0, title, intervel, nTrans, children, audioDir})
                         <div className="line"></div>
                         <div className="head"></div>
                     </div>
-                </div>
+                </div> */}
                 <SpecViewer 
-                    title='Transformed audio'
+                    // title='Transformed audio'
                     specPath={`${audioDir}/${value}.png`}
                     audioPath={`${audioDir}/${value}.wav`}
                 />

@@ -23,7 +23,7 @@
     /* styles for the text inside the left part */
     line-height: 1.5;
     text-align: justify;
-    padding: 0 50px 0 0px;
+    padding: 0 0px 0 0px;
     font-size: 18.5px;
 }
 
@@ -36,6 +36,7 @@
 .ballTaskDemo-right-part {
     /* styles for the right part of the description */
     flex: 19;
+    padding-left: 50px;
 }
 
 .ballTaskDemo-right-part img {

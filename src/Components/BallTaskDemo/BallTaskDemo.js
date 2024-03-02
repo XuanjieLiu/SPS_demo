@@ -6,24 +6,24 @@ import {getEnvPath} from '../../commonUtils';
 const BallTaskDemo = () => {
     return (
         <div className="ballTaskDemo-container">
-            <h1 className="ballTaskDemo-title">Video Task Demo: The 3D Bouncing Ball</h1>
+            <h1 className="ballTaskDemo-title">Video Task Demos: The 3D Bouncing Ball</h1>
             <div className="ballTaskDemo-description">
                 <div className="ballTaskDemo-left-part">
                     <p className="ballTaskDemo-text">
-                    This section contains demos related to Section 4.2 of our paper.<br />
-                    Figure 1 on the right displays five samples from the dataset used in training.<br />
-                    The following demos illustrate the latent spaces of different models, all derived from the same dataset. 
-                    By using the slider, you can adjust the latent vector z values, 
-                    offering an intuitive grasp of each model's learned latent space. 
-                    Observe the changes in the reconstructed images on the right to see how the decoder interprets the latent space adjustments.
+                    The following demos serve as a supplement to Section 4.2 of the paper.<br />
+                    {/* Figure 1 on the right displays five samples from the dataset used in training.<br />
+                    The following demos illustrate the latent spaces of different models, all derived from the same dataset.  */}
+                    By using the slider, you can adjust the latent vector z values
+                    and bserve the changes in the reconstructed images on the right to see how the decoder interprets the latent space.
+                    With constraints of physical symmetry, the each dimension of the latent vector z should correspond to an aixs in the Cartesian coordinate system.
                     </p>
                 </div>
-                <div className="ballTaskDemo-right-part">
+                {/* <div className="ballTaskDemo-right-part">
                     <img src={getEnvPath("/dataset_preview.gif")} alt="" />
                     <div className='ballTaskDemo-right-part-label'>
                         <span>Fig 1: Raw data</span>
                     </div>
-                </div>
+                </div> */}
             </div>
             <ImageSlider 
                 imgRoot="/model_symm_imgs"
@@ -39,6 +39,7 @@ const BallTaskDemo = () => {
                     Here those two dimensions are z<sub>1</sub> and z<sub>3</sub>, 
                     which correspond to the horizontal plane in Cartesian coordinate system.
                     The third one, z<sub>2</sub>, which is the unaugmented latent dimension, encodes the vertical location.
+                    These characters demosntrate the interpretability of the learned representation.
                 </div>
             </ImageSlider>
             <ImageSlider 

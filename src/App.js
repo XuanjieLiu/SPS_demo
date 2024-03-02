@@ -10,8 +10,8 @@ function App() {
     <div className="App">
       <div className="App-content">
         <Introduction />
-        <BallTaskDemo />
         <ScaleTaskDemo />
+        <BallTaskDemo />
       </div>
     </div>
   );

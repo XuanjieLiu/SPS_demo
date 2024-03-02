@@ -42,15 +42,16 @@ function Introduction() {
                 <p>[<a href="https://github.com/XuanjieLiu/Self-supervised-learning-via-Physical-Symmetry">Codes</a>]</p>
             </div> */}
             <div className="intro">
-                This is the demonstration page for our paper presented at NeurIPS 2023, titled &nbsp;
+                This is the demonstration page for our paper presented at NeurIPS 2023, titled&nbsp;
                 <a href="https://arxiv.org/abs/2302.10890"><i>Learning Interpretable Low-dimensional Representation via Physical Symmetry</i></a>.
-                We introduce a novel self-supervised learning framework, SPS (Self-supervised Learning via Physical Symmetry), 
-                which uses physical symmetries as an inductive bias to extract interpretable low-dimensional representations from perceptual time-series data, 
-                such as videos and audios. To demonstrate the experimental results, we compare the SPS with two other models: an ablation version without physical symmetry, 
-                essentially a Variational Autoencoder (VAE) with a prior model, and a baseline model, Beta-VAE. 
-                These domes intuitively demonstrate the representation space learned by the models.
                 The source code for SPS is now publicly available on&nbsp;
                 <a href='https://github.com/XuanjieLiu/Self-supervised-learning-via-Physical-Symmetry'>Github</a>.
+                <br />
+                <br />
+                To intuitively understand the latent space learned by the different models,
+                you can adjust latent code values via slider and observe decoder reconstructions.
+                We compare the SPS with two other models: an ablation version without physical symmetry, 
+                essentially a Variational Autoencoder (VAE) with a prior model, and a baseline model, Beta-VAE.
             </div>
         </div>
     );
