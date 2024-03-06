@@ -35,21 +35,21 @@ function Introduction() {
                 Xuanjie Liu,&nbsp;
                 <a href='https://inspiring-yonath-a67980.netlify.app/#/'>Daniel Chin</a>,&nbsp;
                 <a href='http://www.yichenwilliamhuang.com/'>Yichen Huang</a>,&nbsp;
-                <a href='http://www.musicxlab.com/members/gus/'>Gus Xia</a>, 
+                <a href='http://www.musicxlab.com/members/gus/'>Gus Xia</a>
             </div>
             {/* <div className="links">
                 <p>[<a href="https://arxiv.org/abs/2302.10890">Paper</a>]</p>
                 <p>[<a href="https://github.com/XuanjieLiu/Self-supervised-learning-via-Physical-Symmetry">Codes</a>]</p>
             </div> */}
             <div className="intro">
-                This is the demonstration page for our paper presented at NeurIPS 2023, titled&nbsp;
+                This is the demonstration page for the paper presented at NeurIPS 2023, titled&nbsp;
                 <a href="https://arxiv.org/abs/2302.10890"><i>Learning Interpretable Low-dimensional Representation via Physical Symmetry</i></a>.
                 The source code for SPS is now publicly available on&nbsp;
                 <a href='https://github.com/XuanjieLiu/Self-supervised-learning-via-Physical-Symmetry'>Github</a>.
                 <br />
                 <br />
                 To intuitively understand the latent space learned by the different models,
-                you can adjust latent code values via slider and observe decoder reconstructions.
+                you can adjust latent code values via sliders and observe decoder reconstructions.
                 We compare the SPS with two other models: an ablation version without physical symmetry, 
                 essentially a Variational Autoencoder (VAE) with a prior model, and a baseline model, Beta-VAE.
             </div>

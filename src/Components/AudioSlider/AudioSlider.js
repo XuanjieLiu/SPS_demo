@@ -61,6 +61,7 @@ function AudioSlider({initValue=0, title, intervel, nTrans, children, audioDir})
                     name={`z values translation`}
                     min={initValue-nTrans}
                     max={initValue+nTrans}
+                    showScale={true}
                 />
             </div>
             <div className='below-caption'>

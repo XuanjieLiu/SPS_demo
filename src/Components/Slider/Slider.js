@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Slider.css';
 
-function Slider({onChange, initValue, name, subNum='', min=0, max=9, className=''}) {
+function Slider({onChange, initValue, name, subNum='', min=0, max=9, className='', showScale=false}) {
   const [value, setValue] = useState(initValue);
 
   const handleChange = (event) => {
@@ -24,18 +24,14 @@ function Slider({onChange, initValue, name, subNum='', min=0, max=9, className='
             min={min}
             max={max}
           />
-          {/* <div className="slider-labels">
+          {showScale? 
+            <div className="slider-labels">
+            <span>-2</span>
+            <span>-1</span>
             <span>0</span>
             <span>1</span>
             <span>2</span>
-            <span>3</span>
-            <span>4</span>
-            <span>5</span>
-            <span>6</span>
-            <span>7</span>
-            <span>8</span>
-            <span>9</span>
-        </div> */}
+          </div> : null}
         </div>
       </div>
   );

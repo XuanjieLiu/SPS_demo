@@ -16,3 +16,9 @@
     outline: none;
     -webkit-appearance: none;
 }
+
+.slider-labels {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
