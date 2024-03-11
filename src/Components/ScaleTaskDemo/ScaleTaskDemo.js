@@ -15,8 +15,9 @@ const ScaleTaskDemo = () => {
                 we employ relative pitch to assess the linearity of the learned representations.  */}
                 By adjusting the slider, 
                 you translate the z value for each note in the scale. 
-                Then listen to the transformed audio, you can determine whether the model has successfully learned a linear pitch representation, 
+                Then listen to the transformed audio, you can determine whether the model has successfully learned a <em>linear pitch</em> representation, 
                 evidenced by the preservation of the major scale run's characteristic sound.
+                The audio at the zero position is the reconstruction of the original major scale run without any pitch translation.
                 </p>
             </div>
             <AudioSlider 

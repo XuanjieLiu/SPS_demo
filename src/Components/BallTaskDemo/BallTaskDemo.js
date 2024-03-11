@@ -1,7 +1,6 @@
 import React from 'react';
 import ImageSlider from '../ImageSlider/ImageSlider';
 import './BallTaskDemo.css';
-import {getEnvPath} from '../../commonUtils';
 
 const BallTaskDemo = () => {
     return (
@@ -15,7 +14,7 @@ const BallTaskDemo = () => {
                     The following demos illustrate the latent spaces of different models, all derived from the same dataset.  */}
                     By using the slider, you can adjust the latent z values
                     and observe the changes in the reconstructed images on the right.
-                    With the constraints of physical symmetry, each dimension of the latent z should correspond to an axis in the Cartesian coordinate system.
+                    With the constraints of physical symmetry, each dimension of the latent z should correspond to an axis in the <em>Cartesian coordinate system</em>.
                     </p>
                 </div>
                 {/* <div className="ballTaskDemo-right-part">
